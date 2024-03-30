@@ -43,8 +43,6 @@ To set up SSL on an Amazon Linux instance running Apache web server and PHP pack
 
 8. To adjust file permissions, use the appropriate commands.
 
- ``` bash
-
     sudo usermod -a -G apache ec2-user
     sudo chown -R ec2-user:apache /var/www
     sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
